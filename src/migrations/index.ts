@@ -1,4 +1,4 @@
-import {create} from '../repository/product.repository'
+import {create} from '../repository/product/product.repository'
 import {ProductModelDto} from "../model/product/product.model.dto";
 import {DatabaseService} from "../service/database.service";
 import * as dotenv from 'dotenv';

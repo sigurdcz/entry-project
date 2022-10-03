@@ -1,5 +1,5 @@
 import {LoggerService} from "../../../service/logger.service";
-import {deleteOne} from "../../../repository/product.repository";
+import {deleteOne} from "../../../repository/product/product.repository";
 import {responseError} from "../../../service/error.service";
 import {Response} from "express";
 

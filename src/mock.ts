@@ -2,8 +2,8 @@ import app from "./server";
 import {DatabaseService} from "./service/database.service";
 
 //src start
-const server = app.listen(3030, ()=>{
-    console.log(`Server start on port : ${3030}`)
+const server = app.listen(process.env.MOCK_SERVER_PORT, ()=>{
+    console.log(`Server start on port : ${process.env.MOCK_SERVER_PORT}`)
 })
 
 //DB connect
