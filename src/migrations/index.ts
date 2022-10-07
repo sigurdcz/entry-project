@@ -1,7 +1,7 @@
 import {create} from '../repository/product/product.repository'
-import {ProductModelDto} from "../model/product/product.model.dto";
 import {DatabaseService} from "../service/database.service";
 import * as dotenv from 'dotenv';
+import ProductInputDto from "../model/product/dto/input/product.input.dto";
 dotenv.config();
 
 //DB connect
@@ -22,6 +22,6 @@ const products = [
 ];
 
 for (const product of products) {
-    const item = <ProductModelDto>product;
+    const item = <ProductInputDto>product;
     create(item)
 }
